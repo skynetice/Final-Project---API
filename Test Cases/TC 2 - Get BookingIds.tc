@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC 2 - Get BookingIds</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a59d9b23-41a3-4873-b97a-cdd7261c0198</testCaseGuid>
+</TestCaseEntity>
