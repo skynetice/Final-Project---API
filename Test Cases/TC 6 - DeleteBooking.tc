@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC 6 - DeleteBooking</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0598a169-c139-4937-b04a-3089012b6212</testCaseGuid>
+</TestCaseEntity>

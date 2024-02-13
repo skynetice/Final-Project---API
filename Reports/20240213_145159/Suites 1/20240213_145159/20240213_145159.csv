@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Suites 1,,,,13-02-2024 14:52:04,13-02-2024 14:52:12,8.236s,PASSED
+,,,,,,,
+Test Cases/TC 1 - CreateToken,,,,13-02-2024 14:52:04,13-02-2024 14:52:08,3.897s,PASSED
+"response = sendRequest(findTestObject(""Auth/CreateToken""))",,,,13-02-2024 14:52:05,13-02-2024 14:52:08,3.391s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,13-02-2024 14:52:08,13-02-2024 14:52:08,0.026s,PASSED
+"token = getElementPropertyValue(response, ""token"")",,,,13-02-2024 14:52:08,13-02-2024 14:52:08,0.102s,PASSED
+println(token),,,,13-02-2024 14:52:08,13-02-2024 14:52:08,0.006s,PASSED
+,,,,,,,
+Test Cases/TC 2 - Get BookingIds,,,,13-02-2024 14:52:08,13-02-2024 14:52:10,1.283s,PASSED
+"response = sendRequest(findTestObject(""Booking/GetBookingIds""))",,,,13-02-2024 14:52:08,13-02-2024 14:52:10,1.199s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,13-02-2024 14:52:10,13-02-2024 14:52:10,0.004s,PASSED
+,,,,,,,
+Test Cases/TC 3 - GetBooking,,,,13-02-2024 14:52:10,13-02-2024 14:52:11,1.274s,PASSED
+"response = sendRequest(findTestObject(""Booking/GetBooking""))",,,,13-02-2024 14:52:10,13-02-2024 14:52:11,1.201s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,13-02-2024 14:52:11,13-02-2024 14:52:11,0.004s,PASSED
+,,,,,,,
+Test Cases/TC 4 - CreateBooking,,,,13-02-2024 14:52:11,13-02-2024 14:52:12,1.523s,PASSED
+"response = sendRequest(findTestObject(""Booking/CreateBooking""))",,,,13-02-2024 14:52:11,13-02-2024 14:52:12,1.170s,PASSED
+"verifyElementPropertyValue(response, ""booking.firstname"", ""Susi"")",,,,13-02-2024 14:52:12,13-02-2024 14:52:12,0.044s,PASSED
+"verifyElementPropertyValue(response, ""booking.lastname"", ""Mulyadi"")",,,,13-02-2024 14:52:12,13-02-2024 14:52:12,0.033s,PASSED
+"verifyElementPropertyValue(response, ""booking.totalprice"", 256)",,,,13-02-2024 14:52:12,13-02-2024 14:52:12,0.041s,PASSED
+"verifyElementPropertyValue(response, ""booking.depositpaid"", true)",,,,13-02-2024 14:52:12,13-02-2024 14:52:12,0.036s,PASSED
+"verifyElementPropertyValue(response, ""booking.bookingdates.checkin"", ""2023-04-07"")",,,,13-02-2024 14:52:12,13-02-2024 14:52:12,0.038s,PASSED
+"verifyElementPropertyValue(response, ""booking.bookingdates.checkout"", ""2023-04-11"")",,,,13-02-2024 14:52:12,13-02-2024 14:52:12,0.036s,PASSED
+"verifyElementPropertyValue(response, ""booking.additionalneeds"", ""Bakso"")",,,,13-02-2024 14:52:12,13-02-2024 14:52:12,0.030s,PASSED

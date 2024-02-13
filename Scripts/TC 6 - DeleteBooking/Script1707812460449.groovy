@@ -17,11 +17,31 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Auth/CreateToken'))
+//ambil token
+response = WS.sendRequest(findTestObject('Object Repository/Auth/CreateToken'))
 
-WS.verifyResponseStatusCode(response, 200)
+// simpan token di variabel
+token = WS.getElementPropertyValue(response, 'token')
 
-GlobalVariable.token = WS.getElementPropertyValue(response, 'token')
+// jalankan method put, input parameter token dengan nilai variabel token
+updated = WS.sendRequestAndVerify(findTestObject('Object Repository/Booking/DeleteBooking',[('token'):token]))
 
-println(GlobalVariable.token)
+println(updated)
 
+WS.verifyResponseStatusCode(updated, 201)
+
+//firstname = WS.getElementPropertyValue(updated, 'firstname')
+//lastname = WS.getElementPropertyValue(updated, 'lastname')
+//totalprice = WS.getElementPropertyValue(updated, 'totalprice')
+//depositpaid = WS.getElementPropertyValue(updated, 'depositpaid')
+//checkin = WS.getElementPropertyValue(updated, 'bookingdates.checkin')
+//checkout = WS.getElementPropertyValue(updated, 'bookingdates.checkout')
+//needs = WS.getElementPropertyValue(updated, 'additionalneeds')
+//
+//println(firstname)
+//println(lastname)
+//println(totalprice)
+//println(depositpaid)
+//println(checkin)
+//println(checkout)
+//println(needs)
