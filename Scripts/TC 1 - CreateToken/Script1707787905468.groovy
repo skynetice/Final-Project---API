@@ -22,3 +22,5 @@ response = WS.sendRequest(findTestObject('Auth/CreateToken'))
 WS.verifyResponseStatusCode(response, 200)
 
 GlobalVariable.token = WS.getElementPropertyValue(response, 'token')
+
+println(GlobalVariable.token);

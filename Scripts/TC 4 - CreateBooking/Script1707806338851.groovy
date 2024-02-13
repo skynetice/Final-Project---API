@@ -17,6 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Booking/GetBookingIds'))
+response = WS.sendRequest(findTestObject('Booking/CreateBooking'))
 
-WS.verifyResponseStatusCode(response, 200)
+WS.verifyElementPropertyValue(response, 'booking.firstname', "Susi")
+WS.verifyElementPropertyValue(response, 'booking.lastname', "Mulyadi")
+WS.verifyElementPropertyValue(response, 'booking.totalprice', 256)
+WS.verifyElementPropertyValue(response, 'booking.depositpaid', true)
+WS.verifyElementPropertyValue(response, 'booking.bookingdates.checkin', "2023-04-07")
+WS.verifyElementPropertyValue(response, 'booking.bookingdates.checkout', "2023-04-11")
+WS.verifyElementPropertyValue(response, 'booking.additionalneeds', "Bakso")
+
