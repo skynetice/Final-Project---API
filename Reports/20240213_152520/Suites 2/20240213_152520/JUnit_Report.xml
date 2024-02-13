@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Suites 2" time="8.885" tests="2" failures="0" errors="0">
+   <testsuite name="Suites 2" tests="2" failures="0" errors="0" time="8.885" skipped="0" timestamp="13-02-2024T15:25:25" hostname="skyne - SKYNETICJ-0VA" id="Test Suites/Suites 2">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\skyne\\git\\Final-Project---API\\Reports\\20240213_152520\\Suites 2\\20240213_152520"/>
+         <property name="logFiles" value="C:\\Users\\skyne\\git\\Final-Project---API\\Reports\\20240213_152520\\Suites 2\\20240213_152520\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="skyne - SKYNETICJ-0VA"/>
+         <property name="hostAddress" value="172.16.213.219"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.2.0.212"/>
+      </properties>
+      <testcase name="Test Cases/TC 5 - UpdateBooking" time="5.974" classname="Test Cases/TC 5 - UpdateBooking" status="PASSED">
+         <system-out><![CDATA[13-02-2024T15:25:25 - [TEST_CASE][PASSED] - Test Cases/TC 5 - UpdateBooking: Test Cases/TC 5 - UpdateBooking
+
+13-02-2024T15:25:26 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/Auth/CreateToken")): Send request successfully
+
+13-02-2024T15:25:29 - [MESSAGE][INFO] - HAR: C:\Users\skyne\git\Final-Project---API\Reports\20240213_152520\Suites 2\20240213_152520\requests\main\0.har
+
+13-02-2024T15:25:29 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T15:25:29 - [TEST_STEP][PASSED] - token = getElementPropertyValue(response, "token"): null
+
+13-02-2024T15:25:29 - [TEST_STEP][PASSED] - updated = sendRequestAndVerify(findTestObject("Object Repository/Booking/UpdateBooking", ["token":token])): Send request and verify the response successfully
+
+13-02-2024T15:25:30 - [MESSAGE][INFO] - HAR: C:\Users\skyne\git\Final-Project---API\Reports\20240213_152520\Suites 2\20240213_152520\requests\main\1.har
+
+13-02-2024T15:25:30 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "firstname", "Susi"): Verify element property value successfully
+
+13-02-2024T15:25:31 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-02-2024T15:25:31 - [MESSAGE][PASSED] - Verify response successfully
+
+13-02-2024T15:25:31 - [MESSAGE][PASSED] - All validation steps have been passed
+
+13-02-2024T15:25:31 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(updated, "firstname", "Susi"): Verify element property value successfully
+
+13-02-2024T15:25:31 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - firstname = getElementPropertyValue(updated, "firstname"): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - lastname = getElementPropertyValue(updated, "lastname"): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - totalprice = getElementPropertyValue(updated, "totalprice"): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - depositpaid = getElementPropertyValue(updated, "depositpaid"): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - checkin = getElementPropertyValue(updated, "bookingdates.checkin"): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - checkout = getElementPropertyValue(updated, "bookingdates.checkout"): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - needs = getElementPropertyValue(updated, "additionalneeds"): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - println(firstname): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - println(lastname): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - println(totalprice): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - println(depositpaid): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - println(checkin): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - println(checkout): null
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - println(needs): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC 6 - DeleteBooking" time="2.654" classname="Test Cases/TC 6 - DeleteBooking" status="PASSED">
+         <system-out><![CDATA[13-02-2024T15:25:31 - [TEST_CASE][PASSED] - Test Cases/TC 6 - DeleteBooking: Test Cases/TC 6 - DeleteBooking
+
+13-02-2024T15:25:31 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Object Repository/Auth/CreateToken")): Send request successfully
+
+13-02-2024T15:25:32 - [MESSAGE][INFO] - HAR: C:\Users\skyne\git\Final-Project---API\Reports\20240213_152520\Suites 2\20240213_152520\requests\main\2.har
+
+13-02-2024T15:25:32 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T15:25:32 - [TEST_STEP][PASSED] - token = getElementPropertyValue(response, "token"): null
+
+13-02-2024T15:25:32 - [TEST_STEP][PASSED] - updated = sendRequestAndVerify(findTestObject("Object Repository/Booking/DeleteBooking", ["token":token])): Send request and verify the response successfully
+
+13-02-2024T15:25:34 - [MESSAGE][INFO] - HAR: C:\Users\skyne\git\Final-Project---API\Reports\20240213_152520\Suites 2\20240213_152520\requests\main\3.har
+
+13-02-2024T15:25:34 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+13-02-2024T15:25:34 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+13-02-2024T15:25:34 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+13-02-2024T15:25:34 - [MESSAGE][PASSED] - Verify response successfully
+
+13-02-2024T15:25:34 - [MESSAGE][PASSED] - All validation steps have been passed
+
+13-02-2024T15:25:34 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+13-02-2024T15:25:34 - [TEST_STEP][PASSED] - println(updated): null
+
+13-02-2024T15:25:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(updated, 201): Verify response status code successfully
+
+13-02-2024T15:25:34 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-02-2024T15:25:25 - [TEST_SUITE][PASSED] - Suites 2: Test Cases/TC 6 - DeleteBooking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

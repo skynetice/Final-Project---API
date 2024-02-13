@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Suites 2,,,,13-02-2024 15:25:25,13-02-2024 15:25:34,8.885s,PASSED
+,,,,,,,
+Test Cases/TC 5 - UpdateBooking,,,,13-02-2024 15:25:25,13-02-2024 15:25:31,5.974s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/Auth/CreateToken""))",,,,13-02-2024 15:25:26,13-02-2024 15:25:29,3.528s,PASSED
+"token = getElementPropertyValue(response, ""token"")",,,,13-02-2024 15:25:29,13-02-2024 15:25:29,0.100s,PASSED
+"updated = sendRequestAndVerify(findTestObject(""Object Repository/Booking/UpdateBooking"", [""token"":token]))",,,,13-02-2024 15:25:29,13-02-2024 15:25:31,1.543s,PASSED
+"verifyElementPropertyValue(updated, ""firstname"", ""Susi"")",,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.044s,PASSED
+"firstname = getElementPropertyValue(updated, ""firstname"")",,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.035s,PASSED
+"lastname = getElementPropertyValue(updated, ""lastname"")",,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.037s,PASSED
+"totalprice = getElementPropertyValue(updated, ""totalprice"")",,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.035s,PASSED
+"depositpaid = getElementPropertyValue(updated, ""depositpaid"")",,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.035s,PASSED
+"checkin = getElementPropertyValue(updated, ""bookingdates.checkin"")",,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.034s,PASSED
+"checkout = getElementPropertyValue(updated, ""bookingdates.checkout"")",,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.035s,PASSED
+"needs = getElementPropertyValue(updated, ""additionalneeds"")",,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.035s,PASSED
+println(firstname),,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.007s,PASSED
+println(lastname),,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.002s,PASSED
+println(totalprice),,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.002s,PASSED
+println(depositpaid),,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.003s,PASSED
+println(checkin),,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.003s,PASSED
+println(checkout),,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.003s,PASSED
+println(needs),,,,13-02-2024 15:25:31,13-02-2024 15:25:31,0.001s,PASSED
+,,,,,,,
+Test Cases/TC 6 - DeleteBooking,,,,13-02-2024 15:25:31,13-02-2024 15:25:34,2.654s,PASSED
+"response = sendRequest(findTestObject(""Object Repository/Auth/CreateToken""))",,,,13-02-2024 15:25:31,13-02-2024 15:25:32,1.162s,PASSED
+"token = getElementPropertyValue(response, ""token"")",,,,13-02-2024 15:25:32,13-02-2024 15:25:32,0.032s,PASSED
+"updated = sendRequestAndVerify(findTestObject(""Object Repository/Booking/DeleteBooking"", [""token"":token]))",,,,13-02-2024 15:25:32,13-02-2024 15:25:34,1.344s,PASSED
+println(updated),,,,13-02-2024 15:25:34,13-02-2024 15:25:34,0.002s,PASSED
+"verifyResponseStatusCode(updated, 201)",,,,13-02-2024 15:25:34,13-02-2024 15:25:34,0.017s,PASSED

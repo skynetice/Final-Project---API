@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Suites 1" time="8.236" tests="4" failures="0" errors="0">
+   <testsuite name="Suites 1" tests="4" failures="0" errors="0" time="8.236" skipped="0" timestamp="13-02-2024T14:52:04" hostname="skyne - SKYNETICJ-0VA" id="Test Suites/Suites 1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\skyne\\git\\Final-Project---API\\Reports\\20240213_145159\\Suites 1\\20240213_145159"/>
+         <property name="logFiles" value="C:\\Users\\skyne\\git\\Final-Project---API\\Reports\\20240213_145159\\Suites 1\\20240213_145159\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="skyne - SKYNETICJ-0VA"/>
+         <property name="hostAddress" value="172.16.213.219"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.2.0.212"/>
+      </properties>
+      <testcase name="Test Cases/TC 1 - CreateToken" time="3.897" classname="Test Cases/TC 1 - CreateToken" status="PASSED">
+         <system-out><![CDATA[13-02-2024T14:52:04 - [TEST_CASE][PASSED] - Test Cases/TC 1 - CreateToken: Test Cases/TC 1 - CreateToken
+
+13-02-2024T14:52:05 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Auth/CreateToken")): Send request successfully
+
+13-02-2024T14:52:08 - [MESSAGE][INFO] - HAR: C:\Users\skyne\git\Final-Project---API\Reports\20240213_145159\Suites 1\20240213_145159\requests\main\0.har
+
+13-02-2024T14:52:08 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T14:52:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+13-02-2024T14:52:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+13-02-2024T14:52:08 - [TEST_STEP][PASSED] - token = getElementPropertyValue(response, "token"): null
+
+13-02-2024T14:52:08 - [TEST_STEP][PASSED] - println(token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC 2 - Get BookingIds" time="1.283" classname="Test Cases/TC 2 - Get BookingIds" status="PASSED">
+         <system-out><![CDATA[13-02-2024T14:52:08 - [TEST_CASE][PASSED] - Test Cases/TC 2 - Get BookingIds: Test Cases/TC 2 - Get BookingIds
+
+13-02-2024T14:52:08 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Booking/GetBookingIds")): Send request successfully
+
+13-02-2024T14:52:10 - [MESSAGE][INFO] - HAR: C:\Users\skyne\git\Final-Project---API\Reports\20240213_145159\Suites 1\20240213_145159\requests\main\1.har
+
+13-02-2024T14:52:10 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T14:52:10 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+13-02-2024T14:52:10 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC 3 - GetBooking" time="1.274" classname="Test Cases/TC 3 - GetBooking" status="PASSED">
+         <system-out><![CDATA[13-02-2024T14:52:10 - [TEST_CASE][PASSED] - Test Cases/TC 3 - GetBooking: Test Cases/TC 3 - GetBooking
+
+13-02-2024T14:52:10 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Booking/GetBooking")): Send request successfully
+
+13-02-2024T14:52:11 - [MESSAGE][INFO] - HAR: C:\Users\skyne\git\Final-Project---API\Reports\20240213_145159\Suites 1\20240213_145159\requests\main\2.har
+
+13-02-2024T14:52:11 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T14:52:11 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+13-02-2024T14:52:11 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC 4 - CreateBooking" time="1.523" classname="Test Cases/TC 4 - CreateBooking" status="PASSED">
+         <system-out><![CDATA[13-02-2024T14:52:11 - [TEST_CASE][PASSED] - Test Cases/TC 4 - CreateBooking: Test Cases/TC 4 - CreateBooking
+
+13-02-2024T14:52:11 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Booking/CreateBooking")): Send request successfully
+
+13-02-2024T14:52:12 - [MESSAGE][INFO] - HAR: C:\Users\skyne\git\Final-Project---API\Reports\20240213_145159\Suites 1\20240213_145159\requests\main\3.har
+
+13-02-2024T14:52:12 - [MESSAGE][PASSED] - Send request successfully
+
+13-02-2024T14:52:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.firstname", "Susi"): Verify element property value successfully
+
+13-02-2024T14:52:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-02-2024T14:52:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.lastname", "Mulyadi"): Verify element property value successfully
+
+13-02-2024T14:52:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-02-2024T14:52:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.totalprice", 256): Verify element property value successfully
+
+13-02-2024T14:52:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-02-2024T14:52:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.depositpaid", true): Verify element property value successfully
+
+13-02-2024T14:52:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-02-2024T14:52:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.bookingdates.checkin", "2023-04-07"): Verify element property value successfully
+
+13-02-2024T14:52:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-02-2024T14:52:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.bookingdates.checkout", "2023-04-11"): Verify element property value successfully
+
+13-02-2024T14:52:12 - [MESSAGE][PASSED] - Verify element property value successfully
+
+13-02-2024T14:52:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "booking.additionalneeds", "Bakso"): Verify element property value successfully
+
+13-02-2024T14:52:12 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-02-2024T14:52:04 - [TEST_SUITE][PASSED] - Suites 1: Test Cases/TC 4 - CreateBooking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

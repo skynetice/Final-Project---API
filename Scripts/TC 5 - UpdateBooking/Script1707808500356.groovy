@@ -17,11 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//ambil token
 response = WS.sendRequest(findTestObject('Object Repository/Auth/CreateToken'))
 
+// simpan token di variabel
 token = WS.getElementPropertyValue(response, 'token')
 
+// jalankan method put, input parameter token dengan nilai variabel token
 updated = WS.sendRequestAndVerify(findTestObject('Object Repository/Booking/UpdateBooking',[('token'):token]))
+
+WS.verifyElementPropertyValue(updated, 'firstname', "Susi")
 
 
 
